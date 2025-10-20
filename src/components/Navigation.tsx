@@ -52,7 +52,7 @@ const Navigation = () => {
               to="/"
               className="flex flex-col items-center logo-container"
             >
-              <span className="logo-nayomis text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+              <span className="logo-nayomis text-xl xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl">
                 Nayomi&apos;s
               </span>
               <div className="horizontal-line mt-1 mb-1"></div>
@@ -61,7 +61,7 @@ const Navigation = () => {
                   <path d="M2 12H4C6 12 8 10 10 10C12 10 14 12 16 12C18 12 20 10 22 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                   <path d="M2 16H4C6 16 8 14 10 14C12 14 14 16 16 16C18 16 20 14 22 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 </svg>
-                <span className="logo-waterfront text-sm xs:text-lg sm:text-xl md:text-2xl lg:text-3xl px-2 xs:px-3 py-1 mx-1 rounded bg-white/10 backdrop-blur-sm">
+                <span className="logo-waterfront text-lg xs:text-xl sm:text-xl md:text-2xl lg:text-3xl px-2 xs:px-3 py-1 mx-1 rounded bg-white/10 backdrop-blur-sm">
                   Waterfront
                 </span>
                 <svg className="hidden xs:block w-4 h-3 xs:w-5 xs:h-4 sm:w-6 sm:h-4 text-[#7d2424]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
