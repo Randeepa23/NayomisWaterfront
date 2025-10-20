@@ -842,3 +842,28 @@ All colors MUST be HSL.
   padding-left: 0 !important;
   position: relative;
 }
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .floating-circle {
+    opacity: 0.6;
+  }
+  
+  .small-circle, .tiny-particle {
+    display: none;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }

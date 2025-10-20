@@ -41,33 +41,33 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-10 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in-up">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-primary">
             Get in Touch
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             We'd love to hear from you
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-6 animate-slide-in-left">
             <Card className="shadow-card border-0 hover:shadow-elegant transition-smooth">
-              <CardContent className="pt-6 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full gradient-gold flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-primary" />
+              <CardContent className="pt-4 sm:pt-6 flex items-start gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full gradient-gold flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg mb-1 text-primary">Address</h3>
-                  <p className="text-muted-foreground">Nayomi's Waterfront, Katunayake 11500</p>
+                  <h3 className="font-bold text-base sm:text-lg mb-1 text-primary">Address</h3>
+                  <p className="text-muted-foreground text-sm sm:text-base">Nayomi's Waterfront, Katunayake 11500</p>
                   <a 
                     href="https://www.google.com/maps/place/Nayomi's+Waterfront/@7.1739644,79.8611947,17z/"
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-gold-dark hover:underline text-sm inline-flex items-center mt-1"
+                    className="text-gold-dark hover:underline text-xs sm:text-sm inline-flex items-center mt-1"
                   >
                     <MapPin className="w-3 h-3 mr-1" />
                     Get directions
@@ -163,10 +163,10 @@ const Contact = () => {
 
           {/* Contact Form */}
           <Card className="shadow-card border-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
+            <CardContent className="pt-4 sm:pt-6">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-primary">
+                  <label htmlFor="name" className="block text-sm font-medium mb-1 sm:mb-2 text-primary">
                     Name
                   </label>
                   <Input
@@ -176,11 +176,11 @@ const Contact = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Your name"
-                    className="border-border focus:border-gold"
+                    className="border-border focus:border-gold text-sm sm:text-base h-10 sm:h-12"
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2 text-primary">
+                  <label htmlFor="phone" className="block text-sm font-medium mb-1 sm:mb-2 text-primary">
                     Phone
                   </label>
                   <Input
@@ -190,7 +190,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="Your phone number"
-                    className="border-border focus:border-gold"
+                    className="border-border focus:border-gold text-sm sm:text-base h-10 sm:h-12"
                   />
                 </div>
                 <div>
